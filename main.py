@@ -1,22 +1,22 @@
 import pandas as pd
 import numpy as np
-# graficki prikaz dataframe-a
+# dataframe graphical preview
 from pandasgui import show
 
-# pravimo podatke, unosimo ocjene
+# generating data
 raw_data = np.random.uniform(6, size = (5, 3))
-# zaokruzujemo random brojeve na 2 decimale
-obradjena_data = np.round(raw_data, decimals = 2, out = None)
+# rounding random integers to 2 decimals
+re_data = np.round(raw_data, decimals = 2, out = None)
 
 print('\n')
 
-# pravimo indexe, ucenike
-ucenici = ['1', '2', '3', '4', '5']
+# making labels
+labels = ['1', '2', '3', '4', '5']
 
-# pravimo kolone, odjeljenja
-odjeljenja = ['Class 1', 'Class 2', 'Class 3']
+# making columns
+columns = ['Class 1', 'Class 2', 'Class 3']
 
-# pravimo table
-df = pd.DataFrame(obradjena_data, index = ucenici, columns = odjeljenja)
-# show(df) - graficki prikaz dataframe-a
+# making main table (dataframe)
+df = pd.DataFrame(re_data, index = labels, columns = columns)
+# show(df) - show dataframe in gui
 print(df)
