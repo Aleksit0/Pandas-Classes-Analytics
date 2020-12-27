@@ -11,7 +11,7 @@ re_data = np.round(raw_data, decimals = 2, out = None)
 print('\n')
 
 # making labels
-labels = ['1', '2', '3', '4', '5']
+labels = pd.Index(['1', '2', '3', '4', '5'], name = 'Indeksi')
 
 # making columns
 columns = ['Class 1', 'Class 2', 'Class 3']
